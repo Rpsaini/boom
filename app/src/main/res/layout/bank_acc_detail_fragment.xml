@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp">
+
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/add_your_baTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/add_your_ba"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_size"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/aliasTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/alias"
+            android:alpha="0.6"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/text_black_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_your_baTV" />
+
+        <RelativeLayout
+            android:id="@+id/aliasRL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_gray_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aliasTV">
+
+            <fontpackageforEdittext.Regular
+                android:id="@+id/enter_aliasET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.6"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_alias"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/account_numTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/account_num"
+            android:alpha="0.6"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/text_black_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aliasRL" />
+
+        <RelativeLayout
+            android:id="@+id/account_numRL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_gray_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account_numTV">
+
+            <fontpackageforEdittext.Regular
+                android:id="@+id/account_numET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_accou"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/text_black_color"
+                android:textColorHint="@color/text_hint_color" />
+
+        </RelativeLayout>
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/re_enter_acTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/re_enter_ac"
+            android:alpha="0.6"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/text_black_color"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account_numRL" />
+
+        <RelativeLayout
+            android:id="@+id/re_enter_acRL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_gray_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/re_enter_acTV">
+
+            <fontpackageforEdittext.Regular
+                android:id="@+id/re_enter_acET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/re_enter_ac"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/text_black_color"
+                android:textColorHint="@color/text_hint_color" />
+
+        </RelativeLayout>
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/ifsc_codeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/ifsc_code"
+            android:alpha="0.6"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/text_black_color"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/re_enter_acRL" />
+
+        <RelativeLayout
+            android:id="@+id/ifsc_codeRL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_gray_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ifsc_codeTV">
+
+            <fontpackageforEdittext.Regular
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_ifsc_"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/text_black_color"
+                android:textColorHint="@color/text_hint_color" />
+
+        </RelativeLayout>
+
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/account_typTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/account_typ"
+            android:alpha="0.6"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/text_black_color"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ifsc_codeRL" />
+
+        <RelativeLayout
+            android:id="@+id/account_typeRL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_gray_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account_typTV">
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/select_account_typTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:text="@string/savings"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/text_black_color" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/submitBT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/app_button_drawable"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account_typeRL" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

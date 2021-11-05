@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+    android:id="@+id/ll_fund_list_row"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/dateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.6"
+            android:text="@string/date"
+            android:textAllCaps="true"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></fontspackageForTextView.Regular>
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/dateValueTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.6"
+            android:text="6th September 2021, 14:47:41"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/ipTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.6"
+            android:text="@string/ip"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateTV" />
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/ipValueTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.6"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_size"
+            android:text="150.107.232.132"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateValueTV" />
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/activityTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.6"
+            android:text="@string/activity"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ipTV" />
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/activityValueTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.6"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_size"
+            android:text="Login Success"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ipValueTV" />
+
+        <!--
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/ic_more"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/text_size"></fontspackageForTextView.Regular>
+        -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        ></View>
+
+
+</LinearLayout>

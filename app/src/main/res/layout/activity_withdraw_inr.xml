@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_20"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:padding="10dp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp">
+    </ImageView>
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            >
+
+            <fontspackageForTextView.BoldMedium
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit withdraw request"
+                android:textColor="@color/dark_blue"
+                android:textSize="17dp"
+                android:gravity="center"
+                ></fontspackageForTextView.BoldMedium>
+
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/txt_currency_image1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher"
+                    ></ImageView>
+
+
+                <fontspackageForTextView.BoldExtra
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/total_balance1"
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="0.00"></fontspackageForTextView.BoldExtra>
+            </LinearLayout>
+
+
+
+
+
+
+            <!--      //dlNpTUkrT3lWSXZoSVBFY052N0RNd2Q5RG9EcGpMMjRCQnFETHNVTmxKcz0=-->
+
+
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textColor="@color/grey_dark"
+                android:textSize="12dp"
+                ></fontspackageForTextView.Regular>
+
+            <fontpackageforEdittext.Regular
+                android:inputType="numberDecimal"
+                android:id="@+id/txt_amount"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_drawable"
+                android:hint="Amount"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/grey_dark"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                ></fontpackageforEdittext.Regular>
+
+
+            <fontspackageForTextView.Regular
+                android:visibility="gone"
+                android:id="@+id/txt_label_destinationtag"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination Tag"
+                android:textColor="@color/grey_dark"
+                android:textSize="12dp"
+                ></fontspackageForTextView.Regular>
+
+            <fontpackageforEdittext.Regular
+                android:visibility="gone"
+                android:id="@+id/txt_destinationtag"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_drawable"
+                android:hint="Destination tag"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/grey_dark"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                ></fontpackageforEdittext.Regular>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/submit"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:text="Confirm"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/green_drawable"
+                ></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

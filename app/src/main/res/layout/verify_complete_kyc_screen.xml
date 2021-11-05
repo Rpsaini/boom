@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/header_bar_color"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            app:tint="@color/white" />
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/veriry_acco"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_title_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_header_bar"
+        tools:ignore="SpeakableTextPresentCheck">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_bg_color">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_rect_white_shape_drawable"
+                android:paddingBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/topBarLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/header_line"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:weightSum="1">
+
+                    <fontspackageForTextView.Regular
+                        android:id="@+id/security_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/security"
+                        android:gravity="center"
+                        android:textColor="@color/text_hint_color"
+                        android:drawableTop="@drawable/ic_tick_mark"
+                        android:textSize="@dimen/text_size"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/email_line"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/ic_line" />
+                    </LinearLayout>
+
+                    <fontspackageForTextView.Regular
+                        android:id="@+id/email_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/email"
+                        android:gravity="center"
+                        android:textColor="@color/text_hint_color"
+                        android:textSize="@dimen/text_size"
+                        android:drawableTop="@drawable/ic_tick_mark" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/security_line"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/ic_line" />
+
+                    </LinearLayout>
+
+
+
+
+                    <fontspackageForTextView.Regular
+                        android:id="@+id/welcome_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/welcome_txt"
+                        android:textColor="@color/text_hint_color"
+                        android:textSize="@dimen/text_size"
+                        android:drawableTop="@drawable/ic_tick_mark"/>
+                </LinearLayout>
+              <!--  <ImageView
+                    android:id="@+id/security_mark_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_tick_mark" />
+
+                <ImageView
+                    android:id="@+id/email_line"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_line"
+                    app:layout_constraintBottom_toBottomOf="@+id/security_mark_ic"
+                    app:layout_constraintEnd_toStartOf="@+id/security_mark_ic"
+                    app:layout_constraintTop_toTopOf="@+id/security_mark_ic" />
+
+                <ImageView
+                    android:id="@+id/email_mark_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/email_line"
+                    app:layout_constraintEnd_toStartOf="@+id/email_line"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/email_line"
+                    app:srcCompat="@drawable/ic_tick_mark" />
+
+                <ImageView
+                    android:id="@+id/security_line"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_line"
+                    app:layout_constraintBottom_toBottomOf="@+id/security_mark_ic"
+                    app:layout_constraintStart_toEndOf="@+id/security_mark_ic"
+                    app:layout_constraintTop_toTopOf="@+id/security_mark_ic" />
+
+                <ImageView
+                    android:id="@+id/welcome_mark_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/security_line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/security_line"
+                    app:layout_constraintTop_toTopOf="@+id/security_line"
+                    app:srcCompat="@drawable/ic_tick_mark" />
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/email_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/email"
+                    android:textColor="@color/text_hint_color"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toStartOf="@+id/email_line"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email_mark_ic" />
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/security_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/security"
+                    android:textColor="@color/text_hint_color"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toStartOf="@+id/security_line"
+                    app:layout_constraintStart_toStartOf="@+id/security_mark_ic"
+                    app:layout_constraintTop_toBottomOf="@+id/security_mark_ic" />
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/welcome_tv"
+                    android:layout_width="59dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/welcome_txt"
+                    android:textColor="@color/text_hint_color"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/security_line"
+                    app:layout_constraintTop_toBottomOf="@+id/welcome_mark_ic" />-->
+
+                <ImageView
+                    android:id="@+id/header_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_line"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topBarLL" />
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/select_your_country_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/select_your"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/title_text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/header_line" />
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/countryTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/country"
+                    android:textColor="@color/text_hint_color"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/select_your_country_tv" />
+
+                <RelativeLayout
+                    android:id="@+id/countryRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_gray_border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/countryTV">
+
+                    <fontspackageForTextView.Regular
+                        android:id="@+id/select_countryTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/select_coun"
+                        android:textColor="@color/text_black_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:id="@+id/select_countryIC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/ic_dropdown" />
+                </RelativeLayout>
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/typeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/type"
+                    android:textColor="@color/text_hint_color"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/countryRL" />
+
+                <RelativeLayout
+                    android:id="@+id/typeRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_gray_border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/typeTV">
+
+                    <fontspackageForTextView.Regular
+                        android:id="@+id/select_typeTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/personal"
+                        android:textColor="@color/text_black_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:id="@+id/select_typeIC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/ic_dropdown" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/here_s_whatRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edit_drawable_bg"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/typeRL">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <fontspackageForTextView.Regular
+                                    android:id="@+id/without_kyc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_margin="4dp"
+                                    android:layout_marginTop="0dp"
+                                    android:gravity="center"
+                                    android:text="@string/without_kyc"
+                                    android:textColor="@color/app_button_color"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/line_color" />
+
+                                <fontspackageForTextView.Regular
+                                    android:id="@+id/with_kyc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_margin="4dp"
+                                    android:layout_marginTop="0dp"
+                                    android:gravity="end|center"
+                                    android:paddingEnd="20dp"
+                                    android:text="@string/with_kyc"
+                                    android:textColor="@color/app_button_color"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:id="@+id/without_kyc_trade_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:background="@color/white">
+
+                                    <fontspackageForTextView.Regular
+                                        android:id="@+id/without_kyc_trade_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="10dp"
+                                        android:text="@string/trade"
+                                        android:textColor="@color/hintTextColor"
+                                        android:textSize="@dimen/text_size" />
+
+                                    <ImageView
+                                        android:id="@+id/without_kyc_trade_ic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginEnd="10dp"
+                                        app:srcCompat="@drawable/ic_group_429" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/line_color" />
+
+                                <RelativeLayout
+                                    android:id="@+id/with_kyc_deposit_cry_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:background="@color/white">
+
+                                    <fontspackageForTextView.Regular
+                                        android:id="@+id/with_kyc_deposit_cry_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="10dp"
+                                        android:text="@string/deposit"
+                                        android:textColor="@color/hintTextColor"
+                                        android:textSize="@dimen/text_size" />
+
+                                    <ImageView
+                                        android:id="@+id/with_kyc_deposit_cry_ic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginEnd="10dp"
+                                        app:srcCompat="@drawable/ic_group_429" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:id="@+id/without_kyc_deposit_cry_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:background="@color/white">
+
+                                    <fontspackageForTextView.Regular
+                                        android:id="@+id/without_kyc_deposit_cry_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="10dp"
+                                        android:text="@string/deposit"
+                                        android:textColor="@color/hintTextColor"
+                                        android:textSize="@dimen/text_size" />
+
+                                    <ImageView
+                                        android:id="@+id/without_kyc_deposit_cry_ic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginEnd="10dp"
+                                        app:srcCompat="@drawable/ic_group_429" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/line_color" />
+
+                                <RelativeLayout
+                                    android:id="@+id/with_kyc_trade_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:background="@color/white">
+
+                                    <fontspackageForTextView.Regular
+                                        android:id="@+id/with_kyc_trade_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="10dp"
+                                        android:text="@string/trade"
+                                        android:textColor="@color/hintTextColor"
+                                        android:textSize="@dimen/text_size" />
+
+                                    <ImageView
+                                        android:id="@+id/with_kyc_trade_ic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginEnd="10dp"
+                                        app:srcCompat="@drawable/ic_group_429" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:id="@+id/without_kyc_withdrawal_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:background="@color/white">
+
+                                    <fontspackageForTextView.Regular
+                                        android:id="@+id/without_kyc_withdrawal_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="10dp"
+                                        android:text="@string/withdrawal"
+                                        android:textColor="@color/hintTextColor"
+                                        android:textSize="@dimen/text_size" />
+
+                                    <ImageView
+                                        android:id="@+id/without_kyc_withdrawal_ic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginEnd="10dp"
+                                        app:srcCompat="@drawable/ic_group_428" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/line_color" />
+
+                                <RelativeLayout
+                                    android:id="@+id/with_kyc_withdrawal_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:background="@color/white">
+
+                                    <fontspackageForTextView.Regular
+                                        android:id="@+id/with_kyc_withdrawal_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="10dp"
+                                        android:text="@string/withdrawal"
+                                        android:textColor="@color/hintTextColor"
+                                        android:textSize="@dimen/text_size" />
+
+                                    <ImageView
+                                        android:id="@+id/with_kyc_withdrawal_ic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginEnd="10dp"
+                                        app:srcCompat="@drawable/ic_group_429" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:id="@+id/without_kyc_p2p_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:background="@color/white">
+
+                                    <fontspackageForTextView.Regular
+                                        android:id="@+id/without_kyc_p2p_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="10dp"
+                                        android:text="@string/p2p"
+                                        android:textColor="@color/hintTextColor"
+                                        android:textSize="@dimen/text_size" />
+
+                                    <ImageView
+                                        android:id="@+id/without_kyc_p2p_ic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginEnd="10dp"
+                                        app:srcCompat="@drawable/ic_group_428" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/line_color" />
+
+                                <RelativeLayout
+                                    android:id="@+id/with_kyc_p2p_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:background="@color/white">
+
+                                    <fontspackageForTextView.Regular
+                                        android:id="@+id/with_kyc_p2p_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="10dp"
+                                        android:text="@string/p2p"
+                                        android:textColor="@color/hintTextColor"
+                                        android:textSize="@dimen/text_size" />
+
+                                    <ImageView
+                                        android:id="@+id/with_kyc_p2p_ic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginEnd="10dp"
+                                        app:srcCompat="@drawable/ic_group_429" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_rect_white_shape_drawable"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toBottomOf="@+id/here_s_whatRL">
+
+
+                    <fontspackageForTextView.Regular
+                        android:visibility="gone"
+                        android:id="@+id/skipForNowBT"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/ic_rectangle_77"
+                        android:gravity="center"
+                        android:text="@string/skip_for_no"
+                        android:textColor="@color/text_hint_color"
+                        android:textSize="@dimen/button_text_size"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <fontspackageForTextView.Regular
+                        android:id="@+id/complet_kycBT"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_rectangle_78"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/complet_kyc"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/button_text_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

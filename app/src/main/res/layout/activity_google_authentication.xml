@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_20"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:padding="10dp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp">
+    </ImageView>
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_google_auth"
+                ></ImageView>
+
+            <fontspackageForTextView.BoldMedium
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Google-Authentication code"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp"
+                android:gravity="center"
+                ></fontspackageForTextView.BoldMedium>
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <fontpackageforEdittext.Regular
+                    android:id="@+id/ed_google_code"
+                    android:paddingLeft="5dp"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edittext_drawable"
+                    android:hint="Google 2-FA code"
+                    android:singleLine="true"
+                    android:textColorHint="@color/grey_dark"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:paddingRight="30dp"
+                    ></fontpackageforEdittext.Regular>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:id="@+id/login_submit"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:text="@string/confirmandwithdraw"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/green_drawable"
+                ></TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

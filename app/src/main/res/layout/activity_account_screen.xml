@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountScreen">
+
+    <RelativeLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+
+        >
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/arrow"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp">
+        </ImageView>
+
+        <fontspackageForTextView.Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Account"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/action_bar_title_text_size"></fontspackageForTextView.Regular>
+
+    </RelativeLayout>
+
+
+    <fontspackageForTextView.Regular
+        android:id="@+id/note"
+        android:layout_marginTop="30dp"
+        android:text="Save Secret and Public Key somewhere safe with you to login again."
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/text_size">
+    </fontspackageForTextView.Regular>
+
+
+
+    <ImageView
+        android:id="@+id/qr_image"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        ></ImageView>
+
+
+    <fontspackageForTextView.Regular
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+    </fontspackageForTextView.Regular>
+
+<fontspackageForTextView.Regular
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:textSize="@dimen/text_size"
+    android:text="Public Key"
+    android:textColor="@color/black"
+    android:id="@+id/txt_sceret_key"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:drawableRight="@drawable/copy"
+    ></fontspackageForTextView.Regular>
+
+
+    <fontspackageForTextView.Regular
+        android:layout_marginTop="30dp"
+        android:text="Sceret Key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+    </fontspackageForTextView.Regular>
+
+    <fontspackageForTextView.Regular
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/text_size"
+        android:text=""
+        android:textColor="@color/black"
+        android:id="@+id/txt_public_key"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:drawableRight="@drawable/copy"
+        ></fontspackageForTextView.Regular>
+
+
+
+
+
+    <fontspackageForTextView.Regular
+        android:layout_marginTop="30dp"
+        android:text="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_size">
+    </fontspackageForTextView.Regular>
+
+    <fontspackageForTextView.Regular
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/text_size"
+        android:text=""
+        android:textColor="@color/black"
+        android:id="@+id/txt_public_email"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:drawableRight="@drawable/copy"
+        ></fontspackageForTextView.Regular>
+
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+    android:id="@+id/ll_fund_list_row"
+    android:layout_height="60dp">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+
+                android:id="@+id/back_arrow"
+                android:rotation="300"
+                android:src="@drawable/arrow"
+                ></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <fontspackageForTextView.Regular
+                android:paddingStart="10dp"
+                android:id="@+id/txt_currency"
+                android:layout_width="wrap_content"
+                android:text="Deposit"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textcolor"
+                ></fontspackageForTextView.Regular>
+
+                <fontspackageForTextView.Regular
+                    android:alpha=".6"
+                    android:paddingStart="10dp"
+                    android:id="@+id/txt_currency_name"
+                    android:layout_width="wrap_content"
+                    android:text="20 may 2021 9:30 am"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/textcolor"
+                    ></fontspackageForTextView.Regular>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <fontspackageForTextView.Regular
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/ic_more"
+            android:text="20,0000 Inr"
+            android:textAllCaps="true"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_size"></fontspackageForTextView.Regular>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lite_background"
+        ></View>
+
+
+</LinearLayout>

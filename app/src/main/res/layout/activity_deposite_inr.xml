@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AccountScreen">
+
+
+    <RelativeLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent">
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/arrow"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp">
+        </ImageView>
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INR Deposit"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/action_bar_title_text_size"
+            android:gravity="center"
+            ></fontspackageForTextView.Regular>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/white_20"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+       <fontspackageForTextView.Regular
+            android:text="Bank Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size">
+        </fontspackageForTextView.Regular>
+
+       <fontspackageForTextView.Regular
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deposit Amount"
+        android:textColor="@color/grey_dark"
+        android:textSize="@dimen/small_text_size"
+        ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/ed_amount"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Amount"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            ></fontpackageforEdittext.Regular>
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/small_text_size"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/ed_remarks"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Remarks"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:padding="5dp"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            ></fontpackageforEdittext.Regular>
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Deposit Code"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            ></fontspackageForTextView.Regular>
+
+        <fontspackageForTextView.Regular
+            android:text=""
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/copy"
+            android:id="@+id/txt_deposite_code"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textSize="@dimen/text_size" ></fontspackageForTextView.Regular>
+
+        <fontspackageForTextView.Regular
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/submit"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:text="Submit"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/green_drawable"
+            ></fontspackageForTextView.Regular>
+
+    </LinearLayout>
+    <fontspackageForTextView.Regular
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/txt_important_note"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size">
+    </fontspackageForTextView.Regular>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

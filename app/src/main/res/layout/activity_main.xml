@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_700">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/profileIC"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_user"></ImageView>
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/img_somoreoptions"
+                android:paddingLeft="10dp"
+                android:paddingEnd="2dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/ethicon"></ImageView>
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txt_uerid"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                ></fontspackageForTextView.Regular>
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/img_somoreoptions"
+            android:paddingLeft="10dp"
+            android:paddingEnd="2dp"
+            app:srcCompat="@drawable/sidemenu"></ImageView>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_somoreoptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:paddingEnd="10dp"
+            android:visibility="invisible"
+        ></ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:src="@drawable/logo_new"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:weightSum="4">
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:weightSum="4">
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/txt_quicknuy"
+                    android:drawablePadding="1dp"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/ic_quick_buy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quick Buy"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    ></fontspackageForTextView.Regular>
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/txt_market"
+                    android:drawablePadding="1dp"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/ic_exchange"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Exchange"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    ></fontspackageForTextView.Regular>
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/text_order"
+                    android:drawablePadding="1dp"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/ic_order"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Order"
+                    android:textColor="@color/textcolor"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    ></fontspackageForTextView.Regular>
+
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/txt_fund"
+                    android:drawablePadding="1dp"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/ic_funds"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Funds"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    ></fontspackageForTextView.Regular>
+            </LinearLayout>
+            <View
+                android:visibility="gone"
+                android:layout_height="61dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_nav_drawable"
+                android:weightSum="4"
+                android:alpha="0.1">
+            </View>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

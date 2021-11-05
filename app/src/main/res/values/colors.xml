@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#1F2641</color>
+    <color name="purple_500">#1F2641</color>
+    <color name="purple_700">#0C3887</color>
+    <color name="teal_200">#1F2641</color>
+    <color name="teal_700">#1F2641</color>
+    <color name="black">#0A1A35</color>
+    <color name="uppderr_section">#252D4B</color>
+    <!--<color name="white">#FFFFFFFF</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="white_20">#f4f4f4</color>
+    <color name="greyColor">#788EA3</color>
+    <color name="greencolor">#13B351</color>
+    <color name="grey_dark">#798EA3</color>
+
+
+    <color name="translucent_black">#00ffffff</color>
+    <color name="whiteTextColor">#FFFFFF</color>
+    <color name="hashKeyColor">#FF6454</color>
+    <color name="hintTextColor">#8E8E8E</color>
+    <color name="splashBackgroundColor">#1A202D</color>
+    <color name="lineColor">#B1BAC8</color>
+    <color name="buyButtonColor">#23C95B</color>
+    <color name="sellButtonColor">#E64B3B</color>
+    <color name="transulant_black">#80000000</color>
+    <color name="lightGray">#d3d3d3</color>
+    <color name="light_sell_order_row_clr">#F9D5D2</color>
+
+    <color name="materialLightRed">#FA5858</color>
+    <color name="darkRed">#E64B3B</color>
+    <color name="percentNegativeRed">#FE2E2E</color>
+    <color name="blue_color">#2E86C1</color>
+    <color name="section_color">#4D87C767</color>
+    <color name="section_color_lite">#4DD9E5FB</color>
+    <color name="lite_red">#2C1F28</color>
+    <color name="lite_green">#142E2B</color>
+    <color name="green">#1fab59</color>
+    <color name="lite_green_30">#4D87C767</color>
+    <color name="lite_blue_30">#4DD9E5FB</color>
+
+    <color name="dark_blue">#0C3887</color>
+
+    <color name="light_color_red">#F1948A</color>
+    <color name="light_color_green">#2596be</color>
+    <color name="sell_line_color">#f9d2ce</color>
+    <color name="buy_line_color">#a2dcbb</color>
+    <color name="textcolor">#0A1A35</color>
+    <color name="skyblue">#2F67F0</color>
+    <color name="yello_color">#EDE633</color>
+    <color name="lite_background">#F6F8FC</color>
+    <color name="row_color">#F6F8FC</color>
+    <color name="sky_blue_border">#07CBE3</color>
+
+
+
+    <color name="green_color">#55BD6C</color>
+    <color name="header_bar_color">#0C3887</color>
+    <color name="app_button_color">#0C3887</color>
+    <color name="off_app_button_color">#a9c1ee</color>
+    <color name="text_black_color">#0A1A35</color>
+    <color name="text_hint_color">#700A1A35</color>
+    <color name="edit_view_bg_color">#F6F8FC</color>
+    <color name="app_bg_color">#FFFFFF</color>
+    <color name="app_red_color">#FF3D00</color>
+    <color name="line_color">#1A0A1A35</color>
+    <color name="blue_alpha">#d5dce8</color>
+    <color name="edittext_color">#202C4F</color>
+    <color name="orange_lite">#ED8A4C</color>
+    <color name="orange_dark">#EA485C</color>
+
+    <color name="gradient_blue_lite">#323D68</color>
+    <color name="gradient_blue_dark">#151A2D</color>
+
+
+
+<!--    <color name="dark_blue">#0C3887</color>-->
+<!--  <color name="dark_blue">#0C3887</color>-->
+<!--    12:32
+    Light Blue -#D9E5FB
+    Light green - #87C767
+    both strips ki opacity 30%-->
+<!--    green #13B351-->
+
+<!--    Green dark #142E2B-->
+
+<!--    Red #D03638-->
+
+<!--    Red Dark #2C1F28-->
+
+<!--    Background #203040-->
+
+<!--    Blue main icon #2F67F0-->
+
+<!--    blue icon #34A3F5-->
+
+<!--    non selected icon #788EA3-->
+
+
+</resources>

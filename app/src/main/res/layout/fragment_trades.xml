@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    android:id="@+id/ll_open_order_list_row"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <fontspackageForTextView.Regular
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:text="Time"
+            android:textSize="@dimen/title_text_size"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            ></fontspackageForTextView.Regular>
+
+        <fontspackageForTextView.Regular
+            android:textSize="@dimen/title_text_size"
+            android:textAllCaps="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Price"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            ></fontspackageForTextView.Regular>
+
+        <fontspackageForTextView.Regular
+            android:textSize="@dimen/title_text_size"
+            android:layout_width="0dp"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:text="Volume"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            ></fontspackageForTextView.Regular>
+    </LinearLayout>
+
+    <include layout="@layout/no_data_found"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_trades"
+        ></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_duration_medium">500</integer>
+    <integer name="anim_duration_1000">1000</integer>
+    <integer name="anim_duration_2000">2000</integer>
+    <integer name="button_pressed_animation_duration">100</integer>
+    <integer name="button_pressed_animation_delay">100</integer>
+</resources>

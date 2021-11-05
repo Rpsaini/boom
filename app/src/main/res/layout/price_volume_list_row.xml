@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rr_buysell"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/buy_sell_lines_recycler"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      ></androidx.recyclerview.widget.RecyclerView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:id="@+id/ll_orders_layout"
+    android:layout_height="wrap_content">
+
+
+
+    <fontspackageForTextView.Regular
+        android:singleLine="true"
+        android:id="@+id/txt_volume"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:textColor="@color/grey_dark"
+        android:text=""
+        android:textSize="14dp"
+        android:maxLines="1"
+        android:gravity="center"
+        ></fontspackageForTextView.Regular>
+
+    <fontspackageForTextView.Regular
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:id="@+id/txt_price"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:maxLines="1"
+        android:text=""
+        ></fontspackageForTextView.Regular>
+</LinearLayout>
+
+
+</RelativeLayout>

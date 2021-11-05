@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_20"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:padding="10dp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp">
+    </ImageView>
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+
+        <fontspackageForTextView.BoldMedium
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:textColor="@color/dark_blue"
+            android:textSize="22dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <fontspackageForTextView.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <!--      //dlNpTUkrT3lWSXZoSVBFY052N0RNd2Q5RG9EcGpMMjRCQnFETHNVTmxKcz0=-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <fontpackageforEdittext.Regular
+                android:id="@+id/txt_name"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_drawable"
+                android:hint="Name"
+                android:singleLine="true"
+                android:textColorHint="@color/grey_dark"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:paddingRight="30dp"
+                ></fontpackageforEdittext.Regular>
+
+
+        </RelativeLayout>
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_lastname"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Last Name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nationality"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_nationality"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Nationality"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marital status"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+                <RadioButton
+                    android:id="@+id/rd_married"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Married"
+                    ></RadioButton>
+
+
+            <RadioButton
+                android:id="@+id/rd_unmarried"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Un-married"
+                ></RadioButton>
+
+        </LinearLayout>
+
+
+
+        <fontspackageForTextView.BoldMedium
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address Details"
+            android:textColor="@color/dark_blue"
+            android:textSize="22dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nationality"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_residence_address"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Residence Address"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_city"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="City"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_state"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="State"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postal Code"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_postalcode"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="State"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+
+
+        <fontspackageForTextView.BoldMedium
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank Details"
+            android:textColor="@color/dark_blue"
+            android:textSize="22dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Name"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_bank_name"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Bank Name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account holder name"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_account_holder_name"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Account holder name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account number"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_account_number"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Account number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch number"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_branch_number"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Branch number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IBAN number"
+            android:textColor="@color/grey_dark"
+            android:textSize="12dp"
+            ></fontspackageForTextView.Regular>
+
+        <fontpackageforEdittext.Regular
+            android:id="@+id/txt_iban_number"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Branch number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/grey_dark"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            ></fontpackageforEdittext.Regular>
+
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:id="@+id/login_btn"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:text="Submit"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/green_drawable"
+            ></TextView>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

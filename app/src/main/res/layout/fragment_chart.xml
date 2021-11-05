@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+     <ProgressBar
+
+            android:layout_centerInParent="true"
+            android:id="@+id/viewprogressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></ProgressBar>
+
+<!--    <ScrollView-->
+<!--        -->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+    <WebView
+
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_container"
+                ></LinearLayout>
+
+        </LinearLayout>
+<!--    </ScrollView>-->
+
+</RelativeLayout>

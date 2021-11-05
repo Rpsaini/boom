@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/WhatAShot2/app/src/main/res/drawable-v24/ic_line.xml" value="0.17552083333333332" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/drawable/drawable_button_skyblue.xml" value="0.2046875" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/drawable/drawable_upper_round.xml" value="0.2046875" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/drawable/ic_logo.xml" value="0.18125" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/drawable/ic_select_line.xml" value="0.2" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/drawable/ic_select_review.xml" value="0.2" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/drawable/no_data.xml" value="0.2046875" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_account_screen.xml" value="0.25" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_balance_fulledetails.xml" value="0.15942028985507245" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_deposite_inr.xml" value="0.1" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_get_keys.xml" value="0.15942028985507245" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_google_authentication.xml" value="0.16802536231884058" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_log_row_items.xml" value="0.16802536231884058" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_log_screen.xml" value="0.16802536231884058" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_login2.xml" value="0.18" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_main_new.xml" value="0.16802536231884058" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_pair_detail_view.xml" value="0.47994467496542187" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_scan_qr_code.xml" value="0.15353260869565216" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_show_fiat_currency_deposit_withdraw.xml" value="0.15353260869565216" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_splash_screen.xml" value="0.12" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_upload_kyc_documents.xml" value="0.15353260869565216" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_verify_captcha.xml" value="0.15353260869565216" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_verify_captcha_java.xml" value="0.15353260869565216" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_verify_captcha_java2.xml" value="0.15353260869565216" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_verify_otp.xml" value="0.15353260869565216" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/activity_withdraw_inr.xml" value="0.15353260869565216" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/deposti_coin_dialog.xml" value="0.5" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/fragment_fund.xml" value="0.15715579710144928" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/fragment_open_order.xml" value="0.1" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/fund_adapter_list_row.xml" value="0.75" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/fund_item_popup_menu.xml" value="0.5" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/market_order_list_row.xml" value="0.1" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/no_data_found.xml" value="0.12771739130434784" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/order_list_row.xml" value="0.33" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/search_country_item.xml" value="0.25" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/search_currency_screen.xml" value="0.1" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/select_category_dialog.xml" value="0.1" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/select_category_list_row.xml" value="0.2" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/select_country_screen.xml" value="0.25" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/setting_profile_screen.xml" value="0.15715579710144928" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/verify_complete_kyc_screen.xml" value="0.16" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/verify_profile_details_screen.xml" value="0.1895933014354067" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/verify_submit_account_screen.xml" value="0.42670537010159654" />
+        <entry key="..\:/WhatAShot2/app/src/main/res/layout/witdraw_confrim_screen.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+</project>

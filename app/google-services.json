@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "605843577115",
+    "project_id": "bloomex-d039f",
+    "storage_bucket": "whatashot-d039f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605843577115:android:bb148f87b71110f8ee5bbe",
+        "android_client_info": {
+          "package_name": "com.web.bloomex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605843577115-vbv9f05644bqrbfvks6qhe5bhu2r60sc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.web.bloomex",
+            "certificate_hash": "038349bf67aae968bc227570b924b125e4e27abe"
+          }
+        },
+        {
+          "client_id": "605843577115-sn1lmgd1s6q7p9bsml7ivhe8oilperje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXLptYQ5ClFXdL1hGBM3FKnIAm4BIWYpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605843577115-sn1lmgd1s6q7p9bsml7ivhe8oilperje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.QuickBuyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/skyblue"
+        >
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txt_buy_crypto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/welcometoexchange"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_title_text_size"
+            android:translationY="-10dp"></fontspackageForTextView.BoldMedium>
+
+        <fontspackageForTextView.Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_buy_crypto"
+            android:gravity="center"
+            android:text="@string/buyyourfirstcrypto"
+            android:textColor="@color/yello_color"
+            android:textSize="@dimen/action_bar_title_text_size"
+            android:translationY="-10dp"></fontspackageForTextView.Regular>
+    </RelativeLayout>
+
+    <fontspackageForTextView.Regular
+        android:paddingLeft="10dp"
+        android:text="@string/coin"
+        android:gravity="center|left"
+        android:layout_marginTop="12dp"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:background="@color/edit_view_bg_color"
+        ></fontspackageForTextView.Regular>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/quick_buy_coin_recycler"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <include layout="@layout/no_data_found"/>
+
+</LinearLayout>

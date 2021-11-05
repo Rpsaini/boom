@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:id="@+id/ll_view_down"
+    android:background="@drawable/white_drawable_uppercorner"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_height="4dp"
+        android:layout_width="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        ></View>
+
+
+    <fontspackageForTextView.BoldMedium
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="PLEASE PAY ATTENTION! THE COIN YOU SELECTED IS:"></fontspackageForTextView.BoldMedium>
+
+
+    <ImageView
+        android:id="@+id/txt_currency_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        ></ImageView>
+
+
+    <fontspackageForTextView.BoldMedium
+        android:id="@+id/txt_subheading"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""></fontspackageForTextView.BoldMedium>
+
+
+
+
+    <!--    //name-->
+    <!--    email-->
+    <!--    mobile-->
+    <!--    password-->
+    <!--    considr-->
+    <!--    //privacy url-->
+
+    <!--    email or password-->
+
+    <!--    //verify opt by email-->
+
+    <!--    //dashboard-->
+
+    <!--    //create password  transaction-->
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/qrImageView"
+            android:layout_marginLeft="10dp"
+            android:layout_height="180dp"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            ></ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <fontspackageForTextView.BoldExtra
+                android:id="@+id/qr_address"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="">
+            </fontspackageForTextView.BoldExtra>
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/copytext"
+                android:drawablePadding="5dp"
+                android:textSize="14dp"
+                android:drawableLeft="@drawable/copy"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Copy">
+            </fontspackageForTextView.Regular>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:weightSum="2"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        >
+        <fontspackageForTextView.Regular
+            android:id="@+id/txt_share"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_drawable"
+            android:text="Share"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            ></fontspackageForTextView.Regular>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

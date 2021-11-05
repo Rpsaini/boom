@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_view_down"
+    android:background="@color/white_20"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:padding="10dp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp">
+    </ImageView>
+
+
+    <fontspackageForTextView.BoldMedium
+        android:textColor="@color/black"
+        android:id="@+id/txt_title"
+        android:padding="10dp"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="PLEASE PAY ATTENTION! THE COIN YOU SELECTED IS:"></fontspackageForTextView.BoldMedium>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/txt_currency_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            ></ImageView>
+
+
+        <fontspackageForTextView.BoldExtra
+            android:layout_marginLeft="10dp"
+            android:id="@+id/total_balance"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""></fontspackageForTextView.BoldExtra>
+    </LinearLayout>
+
+
+    <fontspackageForTextView.BoldMedium
+        android:visibility="gone"
+        android:id="@+id/txt_subheading"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""></fontspackageForTextView.BoldMedium>
+
+
+
+
+    <!--    //name-->
+    <!--    email-->
+    <!--    mobile-->
+    <!--    password-->
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_drawable_uppercorner"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+        <fontspackageForTextView.Regular
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/note"
+            android:text="Bank Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            >
+        </fontspackageForTextView.Regular>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_marginBottom="120dp"
+          android:layout_below="@+id/note"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/recycler_view_bankaddress"
+          ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:weightSum="2"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            >
+            <fontspackageForTextView.Regular
+                android:id="@+id/txt_deposit"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/share_button_drawable"
+                android:text="Deposit INR"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                ></fontspackageForTextView.Regular>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fontspackageForTextView.Regular
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/txt_withdrawinr"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/share_button_drawable"
+                android:text="Withdraw INR"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                ></fontspackageForTextView.Regular>
+
+        <fontspackageForTextView.Regular
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/txt_deposit_inr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/green_drawable"
+            android:text="Deposit INR"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            ></fontspackageForTextView.Regular>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

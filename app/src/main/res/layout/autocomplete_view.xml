@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fontspackageForTextView.Regular xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="@color/black"
+    android:textSize="17dp"
+    app:layout_gravity="center|left"
+    android:padding="10dp"
+    android:layout_height="50dp">
+
+</fontspackageForTextView.Regular>

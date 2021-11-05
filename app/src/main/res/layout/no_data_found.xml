@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+   android:layout_marginTop="100dp"
+    android:id="@+id/rr_nodata_view"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_nodata"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_no_data"
+        ></ImageView>
+
+    <fontspackageForTextView.Regular
+        android:layout_below="@+id/img_nodata"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="No Data Found"
+        android:gravity="center"
+        android:textColor="@color/hintTextColor"
+        ></fontspackageForTextView.Regular>
+
+
+</RelativeLayout>

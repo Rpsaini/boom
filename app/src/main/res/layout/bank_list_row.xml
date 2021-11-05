@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_deposit"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white_20"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <fontspackageForTextView.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Holder Name: "></fontspackageForTextView.Regular>
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txt_account_holder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/black"></fontspackageForTextView.Regular>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <fontspackageForTextView.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Name : "></fontspackageForTextView.Regular>
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txt_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/black"></fontspackageForTextView.Regular>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <fontspackageForTextView.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Number : "></fontspackageForTextView.Regular>
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txt_account_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/black"></fontspackageForTextView.Regular>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <fontspackageForTextView.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IFSC : "></fontspackageForTextView.Regular>
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txt_ifsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/black"></fontspackageForTextView.Regular>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

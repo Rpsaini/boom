@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    tools:ignore="MissingDefaultResource">
+   <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+       app:cardBackgroundColor="@color/app_bg_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <!--     <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/closeIC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_close" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:text="Deposit Bitcoin"
+                android:textColor="@color/text_black_color"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,RtlHardcoded,SpUsage"></TextView>
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="By scanning this QR code"
+                android:textColor="@color/text_hint_color"
+                android:textSize="@dimen/text_size"
+                tools:ignore="HardcodedText,RtlHardcoded,SpUsage"></TextView>
+            <ImageView
+                android:id="@+id/qrCodeIC"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_qr_code"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/or_use_thisTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="or use this address below"
+                android:textColor="@color/text_hint_color"
+                android:textSize="@dimen/text_size"
+                tools:ignore="HardcodedText,RtlHardcoded,SpUsage"></TextView>
+            <RelativeLayout
+                android:id="@+id/publicKeyRL"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectangle_gray_shape_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/publicKeyTV">
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/copyTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="35dp"
+                    android:gravity="center|start"
+                    android:text="dsadak;dk;as;dkal;sdkl;askd;lkas;ldk;laska;lsdk;askd;"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/text_black_color"
+                    android:textColorHint="@color/text_hint_color" />
+
+                <ImageView
+                    android:id="@+id/scanImgIC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/ic_copy" />
+            </RelativeLayout>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/alertIC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/confirm_details_layout"
+                    app:srcCompat="@drawable/ic_allert" />
+
+                <TextView
+                    android:id="@+id/pleas_cross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/please_depo"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/alertIC" />
+
+            </LinearLayout>
+-->
+           <ImageView
+               android:id="@+id/closeIC"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="20dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:srcCompat="@drawable/ic_close" />
+
+           <fontspackageForTextView.Regular
+               android:id="@+id/register_ph"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:text="@string/register_ph"
+               android:textColor="@color/text_black_color"
+               android:textSize="@dimen/title_text_size"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <View
+               android:id="@+id/line1"
+               android:layout_width="0dp"
+               android:layout_height="1dp"
+               android:layout_marginTop="20dp"
+               android:alpha="0.1"
+               android:background="@color/dark_blue"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/register_ph" />
+
+           <fontspackageForTextView.Regular
+               android:id="@+id/register_yo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:text="@string/register_yo"
+               android:textColor="@color/dark_blue"
+               android:textSize="@dimen/title_text_size"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+           <LinearLayout
+               android:id="@+id/phoneLL"
+               android:layout_width="0dp"
+               android:layout_height="60dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="20dp"
+               android:background="@drawable/ic_rectangle_96"
+               android:orientation="horizontal"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/register_yo">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:background="@drawable/ic_rectangle_97">
+                   <ImageView
+                       android:id="@+id/countryIC"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentEnd="true"
+                       android:padding="5dp"
+                       app:srcCompat="@drawable/ic_country" />
+                   <fontspackageForTextView.Regular
+                       android:id="@+id/countryTv"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="5dp"
+                       android:text="+91"
+                       android:textColor="@color/dark_blue"
+                       android:textSize="@dimen/text_size"
+                       android:drawableEnd="@drawable/ic_dropdown"
+                       android:drawablePadding="10dp"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/line1" />
+               </LinearLayout>
+               <fontpackageforEdittext.Regular
+                   android:id="@+id/phone"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:textColor="@color/text_black_color"
+                   android:textSize="@dimen/text_size"
+                   android:paddingStart="10dp"
+                   android:paddingEnd="10dp"
+                   android:maxLength="10"
+                   android:text=""
+                   android:background="@android:color/transparent"/>
+           </LinearLayout>
+
+           <fontspackageForTextView.Regular
+               android:id="@+id/send_otpTV"
+               android:layout_width="0dp"
+               android:layout_height="60dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginBottom="40dp"
+               android:background="@drawable/rectangle_9"
+               android:gravity="center"
+               android:orientation="horizontal"
+               android:text="@string/send_otp"
+               android:textColor="@color/white"
+               android:textSize="@dimen/title_text_size"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/phoneLL">
+
+           </fontspackageForTextView.Regular>
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

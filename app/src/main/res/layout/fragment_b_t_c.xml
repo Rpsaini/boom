@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/upper_corner_drawable"
+    android:orientation="vertical"
+    >
+
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="9dp"
+                android:src="@drawable/share_pin"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Referral Link"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"></fontspackageForTextView.BoldMedium>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share your referral link and earn more"
+                    android:textColor="@color/white_20"
+                    android:textSize="14dp"></fontspackageForTextView.BoldMedium>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        >
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txt_referrallink"
+            android:paddingLeft="10dp"
+            android:paddingRight="50dp"
+            android:gravity="center|left"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="https://bloomex.io/dev/register/imsimran07"
+            android:textColor="@color/skyblue"
+            android:textSize="15dp"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="4dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/copysolid"></ImageView>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        >
+
+
+        <fontspackageForTextView.BoldMedium
+            android:gravity="center|left"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Share :  "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/facebook"></ImageView>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/linkedin"></ImageView>
+
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/twitter"></ImageView>
+
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/whatsapp"></ImageView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:background="@drawable/dashboard_box_gradient"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/total_earned"></ImageView>
+
+            <fontspackageForTextView.Regular
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Total Earned"
+                android:textColor="@color/white_20"
+                android:textSize="15dp"
+                android:gravity="center"
+                ></fontspackageForTextView.Regular>
+
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/total_earned"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14dp"></fontspackageForTextView.Regular>
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/dashboard_box_gradient"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/youearned"></ImageView>
+
+                <fontspackageForTextView.Regular
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="You Referred"
+                    android:textColor="@color/white_20"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    ></fontspackageForTextView.Regular>
+
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/txt_total_referral"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    ></fontspackageForTextView.Regular>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="9dp"
+                    android:src="@drawable/referral_rewards"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <fontspackageForTextView.BoldMedium
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Referral Rewards"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        ></fontspackageForTextView.BoldMedium>
+                </LinearLayout>
+            </LinearLayout>
+
+             <fontspackageForTextView.Regular
+                 android:id="@+id/txt_signup_bonus"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/skype_blue_drawable"
+                android:text="Sign Up Bonus - 50 BLM"
+                >
+            </fontspackageForTextView.Regular>
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txt_ref_bonus"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/skype_blue_drawable"
+                android:text="Referral Bonus - 25 BLM"
+                >
+            </fontspackageForTextView.Regular>
+
+
+
+            <LinearLayout
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/background_without_border"
+                >
+
+                <fontspackageForTextView.Regular
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Total Sign Up Done"
+                    android:textColor="@color/white_20"
+                    android:textSize="15dp"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    ></fontspackageForTextView.Regular>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="9dp"
+                            android:src="@drawable/user_icon"></ImageView>
+
+
+                        <fontspackageForTextView.BoldMedium
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:id="@+id/txt_total_signup"
+                            ></fontspackageForTextView.BoldMedium>
+
+                        <fontspackageForTextView.BoldMedium
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="50,000"
+                            android:textColor="@color/skyblue"
+                            android:textSize="17dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentEnd="true"
+                            ></fontspackageForTextView.BoldMedium>
+                    </RelativeLayout>
+            </LinearLayout>
+
+
+            <fontspackageForTextView.Regular
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Referral rewards will be distributed till we get 50,000 Sign ups"
+                android:textColor="@color/white_20"
+                android:textSize="15dp"
+                android:gravity="center"
+                ></fontspackageForTextView.Regular>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/splash_repeat_bc"
+        android:translationY="300dp"
+        ></ImageView>
+
+<!--    <ImageView-->
+<!--        android:translationY="370dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:src="@drawable/advisory"-->
+<!--        ></ImageView>-->
+
+
+</RelativeLayout>

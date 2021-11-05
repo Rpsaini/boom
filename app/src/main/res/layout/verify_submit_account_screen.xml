@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/header_bar_color"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/veriry_acco"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_bar_title_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_header_bar"
+        tools:ignore="SpeakableTextPresentCheck">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_bg_color">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/round_rect_white_shape_drawable">
+
+                <LinearLayout
+                    android:id="@+id/topBarLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/header_line"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/submit_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/submit"
+                        android:gravity="center"
+                        android:textColor="@color/text_hint_color"
+                        android:drawableTop="@drawable/ic_submit"
+                        android:textSize="@dimen/text_size"
+                        />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="0.2"
+                         android:layout_height="match_parent"
+                         android:gravity="center">
+                         <ImageView
+                             android:id="@+id/submit_line"
+                             android:layout_width="100dp"
+                             android:layout_height="wrap_content"
+                             android:layout_marginEnd="10dp"
+                             android:background="@drawable/ic_line"
+                             app:tint="@color/line_color"/>
+                     </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/review_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/review"
+                        android:gravity="center"
+                        android:textColor="@color/text_hint_color"
+                        android:textSize="@dimen/text_size"
+                        android:drawableTop="@drawable/ic_review"
+                        app:tint="@color/line_color"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/review_line"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/ic_line" />
+
+                    </LinearLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/done_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/done"
+                        android:textColor="@color/text_hint_color"
+                        android:textSize="@dimen/text_size"
+                        android:drawableTop="@drawable/ic_done"
+                        app:tint="@color/line_color"/>
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/header_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topBarLL" />
+
+                <TextView
+                    android:id="@+id/please_comp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/please_comp"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/title_text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/header_line" />
+
+                <TextView
+                    android:id="@+id/you_haven_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/you_haven_t"
+                    android:textColor="@color/text_hint_color"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/please_comp" />
+
+                <LinearLayout
+                    android:id="@+id/here_s_whatRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/edit_drawable_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/you_haven_tv">
+
+                    <TextView
+                        android:id="@+id/here_s_whatTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/here_s_what"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_margin="4dp"
+                        android:textColor="@color/app_button_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color"/>
+                <RelativeLayout
+                    android:id="@+id/trade_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/trade_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/trade"
+                        android:textColor="@color/hintTextColor"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:id="@+id/trade_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/ic_group_429" />
+
+                </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color"/>
+                    <RelativeLayout
+                        android:id="@+id/deposit_cry_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/deposit_cry_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/deposit_cry"
+                            android:textColor="@color/hintTextColor"
+                            android:textSize="@dimen/text_size" />
+
+                        <ImageView
+                            android:id="@+id/deposit_cry_ic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="20dp"
+                            app:srcCompat="@drawable/ic_group_429" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color"/>
+                    <RelativeLayout
+                        android:id="@+id/deposit_inr_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/deposit_inr_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/deposit_inr"
+                            android:textColor="@color/hintTextColor"
+                            android:textSize="@dimen/text_size" />
+
+                        <ImageView
+                            android:id="@+id/deposit_inr_ic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="20dp"
+                            app:srcCompat="@drawable/ic_group_428" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color"/>
+                    <RelativeLayout
+                        android:id="@+id/withdraw_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/withdraw_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/withdraw"
+                            android:textColor="@color/hintTextColor"
+                            android:textSize="@dimen/text_size" />
+
+                        <ImageView
+                            android:id="@+id/withdraw_ic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="20dp"
+                            app:srcCompat="@drawable/ic_group_428" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/submitVerifyBT"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/submit_kyc"
+                    android:textSize="@dimen/button_text_size"
+                    android:background="@drawable/app_button_drawable"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/here_s_whatRL" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

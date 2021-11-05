@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.FundFragment">
+
+    <include layout="@layout/no_data_found"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <fontspackageForTextView.Regular
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/total_portfolio"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/text_size"
+                    ></fontspackageForTextView.Regular>
+
+                <fontspackageForTextView.BoldExtra
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    ></fontspackageForTextView.BoldExtra>
+
+                <fontspackageForTextView.BoldExtra
+            android:id="@+id/txt_totalbalance"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            ></fontspackageForTextView.BoldExtra>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        ></View>
+
+    <RelativeLayout
+        android:background="@drawable/rectangle_1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <fontspackageForTextView.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:alpha="0.6"
+            android:drawablePadding="5dp"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="Total Balance : "
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_size"></fontspackageForTextView.Regular>
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/txt_total_fund_value"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:alpha="0.6"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0.0000"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_size"></fontspackageForTextView.Regular>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lite_background"
+        ></View>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <Switch
+            android:id="@+id/txt_switch"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center|right"
+            ></Switch>
+        <fontspackageForTextView.Regular
+            android:id="@+id/txt_hide_show_balance"
+            android:textSize="@dimen/text_size"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:layout_centerInParent="true"
+            android:text="@string/hide_zeorbalance"
+
+            ></fontspackageForTextView.Regular>
+        </LinearLayout>
+
+        <fontspackageForTextView.Regular
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/purple_700"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/converttowrx"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/purple_700"
+
+                ></fontspackageForTextView.Regular>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lite_background"
+        ></View>
+
+     <!--September-->
+
+        <fontspackageForTextView.BoldExtra
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/textcolor"
+            android:alpha="0.6"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Fiat"
+            android:textSize="@dimen/text_size"
+            ></fontspackageForTextView.BoldExtra>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fiat_balance_recyclerview"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <fontspackageForTextView.BoldExtra
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textcolor"
+        android:alpha="0.6"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Crypto"
+        android:textSize="@dimen/text_size"
+        android:layout_marginLeft="12dp"
+         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/balance_recyclerview"
+        android:layout_marginBottom="40dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

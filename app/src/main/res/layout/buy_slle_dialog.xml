@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rr_main_buysell">
+
+    <LinearLayout
+        android:background="@color/white_20"
+        android:id="@+id/ll_buysell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true">
+
+    <LinearLayout
+
+        android:layout_marginTop="0dp"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/teal_700"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/tab_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="BUY"
+            android:textColor="@color/greencolor"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18dp"
+            ></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="@color/grey_dark"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+
+            android:id="@+id/tab_sell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="SELL"
+            android:textColor="@color/darkRed"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18dp"
+            ></fontspackageForTextView.BoldMedium>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="0dp"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@color/teal_700"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <View
+            android:id="@+id/buy_view"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            ></View>
+
+        <View
+            android:visibility="invisible"
+            android:id="@+id/sell_view"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkRed"
+            ></View>
+
+    </LinearLayout>
+
+
+        <ImageView
+            app:tint="@color/white"
+            android:id="@+id/closeBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-50dp"
+            android:padding="10dp"
+            android:layout_gravity="end|center"
+            android:src="@drawable/close_ic"/>
+
+        <Spinner
+            android:id="@+id/spiinerOrderType"
+            android:layout_marginTop="15dp"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            tools:entries="@array/orderType"
+            ></Spinner>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_height=".5dp"
+            android:layout_width="120dp"
+            android:background="@color/grey_dark"
+            android:layout_gravity="right"
+            ></View>
+
+
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/light_gray_drawable">
+            <fontspackageForTextView.BoldExtra
+                android:id="@+id/txt_maincurrency"
+                android:textAllCaps="true"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_side_border_white_drawable"
+                android:text=""
+                android:gravity="center"
+                android:textSize="14dp"
+                ></fontspackageForTextView.BoldExtra>
+
+            <fontpackageforEdittext.Regular
+                android:textCursorDrawable="@drawable/cursur_drawable"
+                android:id="@+id/ed_quantity"
+                android:hint="Quantity"
+                android:textColorHint="@color/grey_dark"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:inputType="numberDecimal"
+                android:textColor="@color/dark_blue"
+                android:textSize="15dp"
+                android:background="@android:color/transparent"
+                ></fontpackageforEdittext.Regular>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/light_gray_drawable">
+            <fontspackageForTextView.BoldExtra
+                android:id="@+id/txt_subcurrency"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_side_border_white_drawable"
+                android:text=""
+                android:gravity="center"
+                android:textSize="14dp"
+                ></fontspackageForTextView.BoldExtra>
+
+            <fontpackageforEdittext.Regular
+                android:id="@+id/ed_amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/grey_dark"
+
+                android:textCursorDrawable="@drawable/cursur_drawable"
+                android:textSize="15dp"></fontpackageforEdittext.Regular>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/placeorder_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:elevation="6dp"
+            app:slider_height="65dp"
+            app:text="Place Order" />
+
+
+<!--    <fontspackageForTextView.BoldMedium-->
+<!--        android:id="@+id/txt_buy"-->
+<!--        android:visibility="gone"-->
+<!--        android:background="@drawable/green_drawable"-->
+<!--        android:layout_width="220dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="buy"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="17dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        ></fontspackageForTextView.BoldMedium>-->
+
+<!--    <fontspackageForTextView.BoldMedium-->
+<!--        -->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/txt_sell"-->
+<!--        android:background="@drawable/round_corner_drawable"-->
+<!--        android:layout_width="220dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="SELL"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        ></fontspackageForTextView.BoldMedium>-->
+    </LinearLayout>
+
+</FrameLayout>

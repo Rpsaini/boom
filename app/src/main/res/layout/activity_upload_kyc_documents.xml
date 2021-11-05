@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/img_back"
+        android:padding="10dp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp">
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:text="Confirm Your Identity"
+            />
+
+
+        <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_color_green"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Upload a Photo or Scan of your National ID"
+                />
+
+            <RelativeLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/border_five"
+                >
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/iv_nationid_front"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/photo"
+                    />
+
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/iv_nationid_front"
+                    android:translationY="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="Nation Id Proof(Front)"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/border_five"
+                >
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/iv_nationalid_back"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/photo"
+                    />
+                <TextView
+                    android:id="@+id/backidentitymessage"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/iv_nationalid_back"
+                    android:translationY="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="National id proof(Back)"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_color_green"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Upload a Photo or Scan of your Address Proof"
+                />
+
+
+            <RelativeLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/border_five"
+                >
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/iv_address_proof_front"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/photo"
+                    />
+                <TextView
+                    android:id="@+id/txt_address_proof_front"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/iv_address_proof_front"
+                    android:translationY="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="Address proof front"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/border_five"
+                >
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/iv_address_proof_back"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/photo"
+                    />
+                <TextView
+                    android:id="@+id/txt_address_proof_back"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/iv_address_proof_back"
+                    android:translationY="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="Address proof back"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/login_btn"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:text="Submit"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/green_drawable"
+                ></TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

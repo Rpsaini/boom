@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/RRplaceorderlayout"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/LLOutlayout"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <fontspackageForTextView.Regular
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:text="Place Order"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@color/teal_700"
+            />
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            >
+            <fontspackageForTextView.Regular
+                android:id="@+id/tv_orderType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="ORDER TYPE"
+                android:gravity="center|start"
+                android:layout_weight=".5"
+                android:textAllCaps="true"
+                android:textColor="@color/text_black_color"
+                android:textSize="14dp"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/orderType"
+                android:textAllCaps="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:textSize="14dp"
+                android:layout_weight=".5"
+                android:textColor="@color/text_black_color"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+        </LinearLayout>
+
+        <View
+            android:alpha=".3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_dark"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            ></View>
+
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            >
+            <fontspackageForTextView.Regular
+                android:id="@+id/tv_orderside"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="SIDE"
+                android:textAllCaps="true"
+                android:gravity="center|start"
+                android:layout_weight=".5"
+                android:textSize="14dp"
+                android:textColor="@color/text_black_color"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/orderSide"
+                android:layout_width="0dp"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:layout_weight=".5"
+                android:textSize="14dp"
+                android:textColor="@color/text_black_color"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+        </LinearLayout>
+
+        <View
+            android:alpha=".3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_dark"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            ></View>
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:weightSum="1"
+            >
+            <fontspackageForTextView.Regular
+                android:id="@+id/tv_ordervolume"
+                android:textAllCaps="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="VOLUME"
+                android:gravity="center|start"
+                android:layout_weight=".5"
+                android:textSize="14dp"
+                android:textColor="@color/text_black_color"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/orderVolume"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAllCaps="true"
+                android:gravity="center|start"
+                android:layout_weight=".5"
+                android:textSize="14dp"
+                android:textColor="@color/text_black_color"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+        </LinearLayout>
+
+        <View
+            android:alpha=".3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_dark"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            ></View>
+
+
+
+
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            >
+            <fontspackageForTextView.Regular
+                android:id="@+id/tv_orderPrice"
+                android:textAllCaps="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="PRICE"
+                android:gravity="center|start"
+                android:layout_weight=".5"
+                android:textSize="14dp"
+                android:textColor="@color/text_black_color"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+
+            <fontspackageForTextView.Regular
+                android:textAllCaps="true"
+                android:id="@+id/orderPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:layout_weight=".5"
+                android:textSize="14dp"
+                android:textColor="@color/text_black_color"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+        </LinearLayout>
+
+        <View
+            android:alpha=".3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_dark"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            ></View>
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            >
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/tv_ordermount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="ORDER AMOUNT"
+                android:textAllCaps="true"
+                android:textColor="@color/text_black_color"></fontspackageForTextView.Regular>
+
+            <fontspackageForTextView.Regular
+                android:textAllCaps="true"
+                android:id="@+id/orderTotalamount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:layout_weight=".5"
+                android:textColor="@color/text_black_color"
+                android:paddingStart="10dp"
+                ></fontspackageForTextView.Regular>
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/LLOutlayout"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                >
+            <fontspackageForTextView.Regular
+
+                android:layout_gravity="right"
+                android:textAllCaps="true"
+                android:id="@+id/orderCancel"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="CANCEL"
+                android:textColor="@color/darkRed"
+                ></fontspackageForTextView.Regular>
+            <fontspackageForTextView.Regular
+
+                android:textAllCaps="true"
+                android:id="@+id/orderConfirm"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="CONFIRM"
+                android:textColor="@color/dark_blue"
+                ></fontspackageForTextView.Regular>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
